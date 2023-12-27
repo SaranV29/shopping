@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
+">
+</head>
+
+<style>/* start button hover */
+.wrapper .btn-read{
+ margin:35px 0 0px 18px;
+}
+
+.btn-read {
+   position: relative;
+  display: inline-block;
+font-size: 14px;
+  padding: 15px 30px;
+  overflow: hidden;
+  z-index: 1;
+    color: #fff;
+    background-color: #0d0d0d;
+    border: none;
+    font-weight: 600;
+}
+.btn--animated:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 180, 224);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+}
+.btn--animated:hover {
+  color: #fff;
+}
+.btn--animated:hover:before {
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+}
+/* end button hover */
+
+
+
+
+
+/* start image overlay */
+.image {
+  display: block;
+  width: 100%;
+  position: relative; 
+  margin-top:20px;
+}
+.image img{
+    width: 100%;
+}
+.image .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(15, 180, 224, 0.3);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 1s ease;
+display:block;
+}
+
+.image:hover .overlay {
+  width: 100%;
+}
+.text{
+    padding: 10px 0 0 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+  color: #0fb4e0;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    cursor: pointer;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.text:hover{
+    color: #fff;
+    background-color: #0fb4e0;
+}
+/* end image overlay */</style>
+<body>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+  <!--start button hover-->
+           <div class="wrapper">
+        <a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg"><button type="button" class=" btn--border btn-read btn--animated">READ MORE</button></a>
+      </div>
+      <!--end button hover-->
+      
+      
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+      <!--start image overlay-->
+       <div class="image">
+  <img src="https://www.xanhda.com/wp-content/uploads/2019/08/gai-xinh-mac-vay-dai-xinh-dep-7-1024x660.jpg" alt="Avatar" >
+  <div class="overlay">
+ <div class="text" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></div>
+  </div>
+</div><!--image-->
+                  <!--start  Modal -->
+  <div class="modal fade" id="myModal" role="dialog" style="z-index: 9000;">
+     <i class="pull-right" aria-hidden="true" data-dismiss="modal" style=" cursor: pointer;">
+      <img class="text-center"src="https://live.staticflickr.com/7809/32344585967_c8d5078b1c_b.jpg" width="60px;">
+      </i>
+  
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+        <div class="modal-body" style="margin: 0 auto; margin-right: 100px;">
+              
+        <img src="https://znews-photo.zadn.vn/w660/Uploaded/lce_qdhuc/2019_07_19/q.jpg" width="100%;">
+             
+        </div>
+       
+    </div>
+  </div>
+                <!--end modal-->
+      <!--end image overlay-->
+      
+      
+      
+      
+      
+<script></script>
+</body>
+</html>
